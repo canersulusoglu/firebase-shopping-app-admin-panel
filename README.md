@@ -5,6 +5,7 @@ Admin panel made with React.js, Express.js and Firebase Admin SDK for
 ## Settings To Use
 
 ***service-account-key.json*** Your firebase admin sdk configurations.
+
 ***config.ts*** Firebase Storage and server configurations.
 
 
