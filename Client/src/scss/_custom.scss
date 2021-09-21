@@ -1,0 +1,140 @@
+// Here you can add other styles
+@import '_media_queries.scss';
+
+
+.key-value-rows{
+    display: grid;
+    grid-gap: 50px 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    .key-value-row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .key-value-row-remove{
+            button{
+                @extend .btn;
+                @extend .btn-primary;
+                @extend .btn-block;
+                @extend .btn-pill;
+                &:after{
+                    content: "Remove";
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+
+    .key-value-row-key-item, .key-value-row-value-item{
+        label{
+            display: flex;
+            align-content: space-between;
+            span{
+                width: 50px;
+                margin-right: 10px;
+            }
+            input{
+                @extend .form-control;
+                width: 250px;
+                flex: 1;
+            }
+        }
+    }
+
+    @include sm{
+        grid-template-columns: auto;
+    }
+
+    @include md{
+        grid-template-columns: auto auto;
+    }
+
+    @include lg{
+        grid-template-columns: auto auto auto;
+    }
+}
+
+
+.images-grid{
+    display: grid;
+    grid-gap: 40px 40px;
+
+    .images-grid-image{
+        img{
+            width: 100%;
+        }
+    }
+
+    @include sm{
+        grid-template-columns: auto auto auto;
+    }
+
+    @include md{
+        grid-template-columns: auto auto auto auto;
+    }
+
+    @include lg{
+        grid-template-columns: auto auto auto auto auto;
+    }
+}
+
+
+.upload__image-wrapper{
+    .images{
+        display: grid;
+        grid-template-columns: 200px 200px;
+        grid-gap: 50px 50px;
+
+        .image-item{
+            img{
+                width: 100%;
+            }
+    
+            .image-item__btn-wrapper{
+                display: flex;
+                align-items: baseline;
+    
+                button{
+                    @extend .btn;
+                    @extend .btn-block;
+                    @extend .btn-warning;
+                    @extend .btn-pill;
+                }
+            }
+        }
+
+        @include xs{
+            grid-template-columns: 200px;
+        }
+
+        @include sm{
+            grid-template-columns: 200px 200px 200px;
+        }
+    
+        @include md{
+            grid-template-columns: 200px 200px 200px 200px;
+        }
+    
+        @include lg{
+            grid-template-columns: 200px 200px 200px 200px 200px;
+        }
+    }
+
+    .buttons{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 30px;
+        button:nth-of-type(1){
+            @extend .btn-primary;
+        }
+    
+        button:nth-of-type(2){
+            @extend .btn-danger;
+        }
+        button{
+            @extend .btn;   
+            @extend .btn-pill;
+        }
+    }
+}
