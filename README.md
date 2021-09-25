@@ -1,6 +1,6 @@
 # Firebase Shopping App Admin Panel
 Admin panel made with React.js, Express.js and Firebase Admin SDK for 
-[Flutter Firebase Shopping App](https://github.com/canersulusoglu/FlutterFirebaseShoppingApp) repository.
+[Flutter Firebase Shopping App](https://github.com/canersulusoglu/flutter-firebase-shopping-app) repository.
 
 ## Settings To Use
 
